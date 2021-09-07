@@ -1,11 +1,11 @@
 function adultFilter(persons) {
 const adults = [];
 
-for(persons of persons) {
-  if(persons.age < 18) {
+for(person of persons) { // of e per gli ogetti iterabili per esempio un array, in va utilizzato nel caso in cui devo andare a controllare la proprietà di un oggetto
+  if(person.age < 18) {
     continue;
   } 
-  adults.push(persons);
+  adults.push(person); //prende quello che c'e dentro  la parentesi e lo mette dentro alduts 
 }
 return adults;
 }
